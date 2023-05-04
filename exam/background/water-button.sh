@@ -4,9 +4,9 @@ button_state=0
 mkfifo button_state_pipe
 
 eval_button_state() {
-	if [ button_state == 1 ]
+	if [ $button_state == 1 ]
 	then
-		bash ~/scripts/exam/helpers/water.sh	
+		attempt-water.sh 2 s	
 	fi
 }
 

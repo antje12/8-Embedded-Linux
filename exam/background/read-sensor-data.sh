@@ -19,5 +19,5 @@ do
 	log.sh pump_water_alarm $((pump_water_alarm))
 	log.sh light $((light))
 
-	sleep 10s
+	sleep 1s
 done
