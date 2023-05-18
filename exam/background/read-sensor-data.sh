@@ -14,10 +14,10 @@ do
 	mosquitto_pub -h localhost -p 1883 -u my_user -P my_password -t "Radish/Sensor/Moisture" -m $soil_moisture -r
 	mosquitto_pub -h localhost -p 1883 -u my_user -P my_password -t "Radish/Sensor/Light" -m $light -r
 
-	log.sh soil_moisture $((soil_moisture))
-	log.sh plant_water_alarm $((plant_water_alarm))
-	log.sh pump_water_alarm $((pump_water_alarm))
-	log.sh light $((light))
+	/home/pi/scripts/exam/helpers/log.sh soil_moisture $((soil_moisture))
+	/home/pi/scripts/exam/helpers/log.sh plant_water_alarm $((plant_water_alarm))
+	/home/pi/scripts/exam/helpers/log.sh pump_water_alarm $((pump_water_alarm))
+	/home/pi/scripts/exam/helpers/log.sh light $((light))
 
 	sleep 1s
 done

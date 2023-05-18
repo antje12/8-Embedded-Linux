@@ -1,3 +1,3 @@
 #!/bin/bash
 
-attempt_water.sh 0 s
+/home/pi/scripts/exam/helpers/attempt-water.sh 0 s

@@ -26,8 +26,8 @@ case $threshold_unit in
 esac
 
 # Read the timestamp from the file (if it exists)
-if [ -f timestamp.txt ]; then
-  timestamp=$(cat timestamp.txt)
+if [ -f /home/pi/scripts/exam/helpers/timestamp.txt ]; then
+  timestamp=$(cat /home/pi/scripts/exam/helpers/timestamp.txt)
 else
   timestamp=0
 fi
@@ -41,7 +41,7 @@ time_diff_seconds=$((current_timestamp - timestamp))
 # Check if the time difference is greater than or equal to the threshold
 if [ $time_diff_seconds -ge $threshold_seconds ]; then
   echo "Threshold value has passed. Executing water.sh."
-  water.sh
+  /home/pi/scripts/exam/helpers/water.sh
 else
   remaining_seconds=$((threshold_seconds - time_diff_seconds))
   echo "Threshold value has not passed. $remaining_seconds seconds remaining."

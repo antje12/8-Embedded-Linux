@@ -1,3 +1,3 @@
 #!/bin/bash
 
-free | awk '/^Mem/{print ($4/$2)*100.0}'
+free | awk '/^Mem/ {printf("%.0f\n", ($4/$2)*100)}'
