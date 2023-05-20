@@ -9,3 +9,4 @@ Embedded Linux Exam files by group 17
 - health-scripts: Contains shell scripts which can be called to collect different indicators of system health.
 - helpers: Contains shell scripts which are used as helper functions by the background scripts and cron jobs to perform their respective functions.
 - logs: Contains the collected log files.
+- html: Contains the PHP pages hosted on the Apache2 web server.
