@@ -6,7 +6,7 @@ mkfifo button_state_pipe
 eval_button_state() {
 	if [ $button_state == 1 ]
 	then
-		attempt-water.sh 2 s	
+		/home/pi/scripts/exam/helpers/attempt-water.sh 2 s	
 	fi
 }
 
