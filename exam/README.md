@@ -10,3 +10,4 @@ Embedded Linux Exam files by group 17
 - helpers: Contains shell scripts which are used as helper functions by the background scripts and cron jobs to perform their respective functions.
 - html: Contains the PHP pages hosted on the Apache2 web server.
 - logs: Contains the collected log files.
+- pico-sensor: Contains code for the pico used as a water pump and sensor collector for the system.
