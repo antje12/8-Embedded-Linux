@@ -94,7 +94,7 @@ void reconnect() {
     if (client.connect(clientId.c_str(), "my_user", "my_password")) {
       Serial.println("connected");
       // Once connected, publish an announcement...
-      client.publish("anton", "hello world");
+      client.publish("remote", "hello world");
       // ... and resubscribe
       client.subscribe(MQTT_TOPIC_RED);
       client.subscribe(MQTT_TOPIC_YELLOW);
